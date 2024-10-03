@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Calibri,serif;
+}
+
+.welcome-menu{
+    width:100%;
+}
+.container{
+    background-color:lightpink;
+    height: 5000px;
+    max-width:1500px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri,serif;
+    width:700px;
+    height: 50px;
+    position:absolute;
+    margin-top:-800px;
+    margin-left:240px;
+}
+
+.about{
+
+    text-align:center;
+    margin-top:-600px;
+    font-size:28px;
+    width:650px;
+}
