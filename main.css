@@ -20,7 +20,6 @@
 .container-anunt{
     max-width:800px;
     margin: 0 auto;
-    padding-bottom:200px;
 }
 body{
     background-color:#F6F3EE;
@@ -32,8 +31,13 @@ body{
     width:700px;
     height: 200px;
     position:absolute;
-    margin-left:400px;
+    margin-left:420px;
     margin-top:49px;
+}
+.footer{
+    margin-top:170px;
+    width: 100%;
+    height: 130px;
 }
 
 .about{
@@ -44,18 +48,19 @@ body{
     width:650px;
 }
 
-.dropdown-menu-gimnaziu{
+.dropdown-menu-elevi{
     display: none;
 }
-.dropdown-menu-liceu{
+.dropdown-menu-profesori{
     display: none;
 }
-.dropdown-menu-utile{
+.dropdown-menu-management{
     display: none;
 }
-.menu-liceu:hover .dropdown-menu-liceu{display: block;}
-.menu-gimnaziu:hover .dropdown-menu-gimnaziu{display: block;}
-.menu-utile:hover .dropdown-menu-utile{display: block;}
+
+.menu-elevi:hover .dropdown-menu-elevi{display: block;}
+.menu-profesori:hover .dropdown-menu-profesori{display: block;}
+.menu-management:hover .dropdown-menu-management{display: block;}
 
 
 .welcome-background{
