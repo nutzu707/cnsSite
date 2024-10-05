@@ -50,8 +50,12 @@ body{
 .dropdown-menu-liceu{
     display: none;
 }
+.dropdown-menu-utile{
+    display: none;
+}
 .menu-liceu:hover .dropdown-menu-liceu{display: block;}
 .menu-gimnaziu:hover .dropdown-menu-gimnaziu{display: block;}
+.menu-utile:hover .dropdown-menu-utile{display: block;}
 
 
 .welcome-background{
