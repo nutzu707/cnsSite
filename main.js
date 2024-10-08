@@ -3,6 +3,8 @@ let bac=0;
 let a5a=0;
 let ecdl=0;
 let cambridge=0;
+let dsd=0;
+let delf=0;
 function examTextDisplay(n){
     if (n === 'ev-nat') {
         ev_nat = !ev_nat;
@@ -64,6 +66,30 @@ function examTextDisplay(n){
             document.getElementById("cambridge").style.display = "none";
         }
     }
+    else  if (n === 'dsd') {
+        dsd = !dsd;
+        if (dsd === true) {
+            document.getElementById("dsd-sign").innerText="-";
+            document.getElementById("dsd").style.display = "block";
+            examTextDisplayReset(n);
+        }
+        else if (dsd === false) {
+            document.getElementById("dsd-sign").innerText="+";
+            document.getElementById("dsd").style.display = "none";
+        }
+    }
+    else  if (n === 'delf') {
+        delf = !delf;
+        if (delf === true) {
+            document.getElementById("delf-sign").innerText="-";
+            document.getElementById("delf").style.display = "block";
+            examTextDisplayReset(n);
+        }
+        else if (delf === false) {
+            document.getElementById("delf-sign").innerText="+";
+            document.getElementById("delf").style.display = "none";
+        }
+    }
 }
 
 function examTextDisplayReset(n){
@@ -91,5 +117,15 @@ function examTextDisplayReset(n){
         document.getElementById("cambridge-sign").innerText="+";
         document.getElementById("cambridge").style.display = "none";
         cambridge=0;
+    }
+    if(n!=='dsd'){
+        document.getElementById("dsd-sign").innerText="+";
+        document.getElementById("dsd").style.display = "none";
+        dsd=0;
+    }
+    if(n!=='delf'){
+        document.getElementById("delf-sign").innerText="+";
+        document.getElementById("delf").style.display = "none";
+        delf=0;
     }
 }
