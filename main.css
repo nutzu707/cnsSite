@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Cambria';
+    font-family: 'Cambria', serif;
 }
 
 
@@ -27,7 +27,8 @@ body{
 .menu{
     display: flex;
     justify-content: center;
-    font-family: Calibri,serif;
+
+
     width:700px;
     height: 200px;
     position:absolute;
@@ -205,7 +206,14 @@ body{
 .small-logo{
     display: none;
 }
-
+.phone-menu{
+    display: none;
+    margin-right:0;
+    margin-left:calc(100vw - 80px);
+    width:80px;
+    height: 80px;
+    position:absolute;
+}
 
 @media screen and (max-width: 1400px) {
     .big-logo{
@@ -213,6 +221,12 @@ body{
     }
     .small-logo{
         display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .phone-menu{
+        display: flex;
     }
 
 }
