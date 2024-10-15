@@ -199,3 +199,20 @@ body{
 .paragraf-anunt > p{
     margin-bottom:20px;
 }
+.big-logo{
+    display: block;
+}
+.small-logo{
+    display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .big-logo{
+        display: none;
+    }
+    .small-logo{
+        display: block;
+    }
+
+}
