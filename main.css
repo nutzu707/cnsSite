@@ -87,8 +87,25 @@ body{
     margin: 0 20px;
 }
 
+.prezentare-title-bar{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prezentare-title-bar::before {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid black;
+
+}
+
+
 .page-title {
     font-size:100px;text-align: center;font-weight: bold;
+}
+.prezentare-title{
+    font-size:100px;font-weight: bold;
 }
 
 .container-concursuri{
