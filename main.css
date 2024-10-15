@@ -75,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:20px;
+    margin-top:30px;
 
 }
 
@@ -92,6 +92,10 @@ body{
 }
 
 .container-concursuri{
+    max-width:1000px;
+    margin: 50px auto 0;
+}
+.container-regulamente{
     max-width:1000px;
     margin: 50px auto 0;
 }
