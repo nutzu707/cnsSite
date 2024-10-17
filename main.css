@@ -31,7 +31,7 @@ body{
     width:700px;
     height: 200px;
     position:absolute;
-    margin-left:380px;
+    margin-left:400px;
     margin-top:49px;
 }
 .footer{
@@ -147,7 +147,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color:coral;
+    background-color:navy;
 
 }
 .titlu-anunt-desc{
@@ -156,7 +156,7 @@ body{
 }
 .data-anunt-desc{
     font-size:16px;
-    color:coral;
+    color:navy;
     margin-left:20px;
 }
 
@@ -188,7 +188,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color:coral;
+    background-color:navy;
 }
 .box-poza-anunt{
     margin-bottom:20px;
@@ -234,7 +234,7 @@ body{
         all: unset;
 
         font-size:16px;
-        color:coral;
+        color:navy;
         font-weight: bold;
     }
     .box-imagine-anunt-desc{
@@ -252,7 +252,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-color:coral;
+        background-color:navy;
     }
 
 }
