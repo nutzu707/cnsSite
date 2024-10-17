@@ -28,11 +28,10 @@ body{
     display: flex;
     justify-content: center;
 
-
     width:700px;
     height: 200px;
     position:absolute;
-    margin-left:420px;
+    margin-left:380px;
     margin-top:49px;
 }
 .footer{
@@ -43,9 +42,10 @@ body{
 
 .about{
 
-    text-align:center;
-    margin-top:100px;
-    font-size:28px;
+    user-select:none;
+    margin-top:130px;
+    font-size:100px;
+    font-weight: bold;
     width:650px;
 }
 
@@ -65,7 +65,7 @@ body{
 
 
 .welcome-background{
-    background-image: url('./assets/websiteUI/schita-liceu.png');
+    background-image: url('./assets/websiteUI/shita-liceu.png');
     width: 100%; height: 850px;
     background-size: cover; background-position: center;
     margin-bottom: 180px;
@@ -202,10 +202,7 @@ body{
 .big-logo{
     display: block;
 }
-.small-logo{
-    display: none;
-}
-.phone-menu{
+.burger-icon{
     display: none;
     margin-right:0;
     margin-left:calc(100vw - 80px);
@@ -262,16 +259,10 @@ body{
 
 
 @media screen and (max-width: 1400px) {
-    .big-logo{
-        display: none;
-    }
-    .small-logo{
-        display: block;
-    }
     .menu{
         display: none;
     }
-    .phone-menu{
+    .burger-icon{
         display: flex;
     }
 
