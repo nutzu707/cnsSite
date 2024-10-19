@@ -205,8 +205,8 @@ body{
 .burger-icon{
     margin-right:-50px;
     margin-left:calc(100vw - 80px);
+    position: absolute;
     z-index:105;
-    position:absolute;
 }
 .mobile-menu{
     display: none;
@@ -280,7 +280,9 @@ body{
         display: none;
     }
     .container{
-        overflow-x: hidden;
+
+        overflow: hidden
     }
+
 
 }
