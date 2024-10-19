@@ -207,7 +207,6 @@ body{
     margin-left:calc(100vw - 70px);
     z-index:105;
     position:absolute;
-    margin-top:10px;
 }
 .mobile-menu{
     display: none;
