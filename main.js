@@ -150,7 +150,7 @@ function mobilemenudisplay() {
 
         setTimeout(() => {
             phoneMenu.style.display = "none";
-        }, 500);
+        }, 300);
 
         mobileLogo.style.position = "absolute";
         burgerIcon.style.position = "absolute";
