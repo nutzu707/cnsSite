@@ -209,7 +209,11 @@ body{
     z-index:105;
 }
 .mobile-menu{
+    z-index:500;
     display: none;
+    position: fixed;
+    background-color: #F6F3EE;
+    height: 80px;
 }
 
 #phone-menu{
