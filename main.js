@@ -129,3 +129,23 @@ function examTextDisplayReset(n){
         delf=0;
     }
 }
+
+
+
+
+
+
+isOnDisplay=0;
+function mobilemenudisplay(){
+    isOnDisplay=!isOnDisplay;
+    if(isOnDisplay){
+        document.getElementById("phone-menu").style.display="flex";
+        document.getElementById("mobile-logo").style.position="fixed";
+        document.getElementById("burger-icon").style.position="fixed";
+    }
+    else{
+        document.getElementById("phone-menu").style.display="none";
+        document.getElementById("mobile-logo").style.position="absolute";
+        document.getElementById("burger-icon").style.position="absolute";
+    }
+}

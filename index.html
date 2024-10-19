@@ -12,18 +12,42 @@
 <body>
 
 <div class="container">
+    <div class="mobile-menu">
+        <div onclick="window.location.href='index.html'" style="cursor:pointer" >
+            <div class="big-logo">
+                <img  src=./assets/websiteUI/logo.png alt="logo" style="width:60px;position:absolute;margin-top:10px;z-index:105;margin-left:10px;" id="mobile-logo">
+            </div>
+        </div>
+        <div class="burger-icon" onclick="mobilemenudisplay()" id="burger-icon">
+            <img style="width: 65px;height: 65px" src="./assets/websiteUI/burger-menu-icon.svg">
+        </div>
+        <div style="width: 100%;background-color:#F6F3EE;z-index:100;position: fixed;flex-direction: column;text-align:center;justify-content: center;
+    overflow: auto;height: 100vh; display: none" id="phone-menu">
+
+
+
+            <a href="prezentare.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">PREZENTARE</a>
+            <h1 style="margin-top:20px">MANAGEMENT</h1>
+            <h1 style="margin-top:20px">ELEVI</h1>
+            <h1 style="margin-top:20px">PROFESORI</h1>
+            <h1 style="margin-top:20px">EXAMENE</h1>
+            <h1 style="margin-top:20px">CONTACT</h1>
+
+
+        </div>
+    </div>
+
+
 
     <div class="welcome-background">
-        <div class="welcome-menu">
+        <div class="big-menu">
             <div onclick="window.location.href='index.html'" style="cursor:pointer">
 
                 <div class="big-logo">
-                    <img  src=./assets/websiteUI/logo.png alt="logo" style="width:80px;position:absolute;margin-top:25px;">
+                    <img  src=./assets/websiteUI/logo.png alt="logo" style="width:80px;position:absolute;margin-top:25px;z-index:101;">
                 </div>
-
-
-
             </div>
+
             <div class="menu">
 
                 <div>
@@ -74,12 +98,11 @@
             </div>
 
 
-            <div class="burger-icon">
-                <img src="./assets/websiteUI/burger-menu-icon.svg" style="z-index:101">
 
-            </div>
 
         </div>
+
+
         <div class="about">
             <p>COLEGIUL</p>
             <p style="margin-top:20px;">NATIONAL</p>
@@ -152,4 +175,6 @@
 
 
 </body>
+
+<script src="./main.js"></script>
 </html>
