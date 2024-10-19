@@ -204,7 +204,7 @@ body{
 }
 .burger-icon{
     margin-right:-50px;
-    margin-left:calc(100vw - 70px);
+    margin-left:calc(100vw - 80px);
     z-index:105;
     position:absolute;
 }
