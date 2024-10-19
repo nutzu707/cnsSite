@@ -144,6 +144,7 @@ function mobileMenuSectionsDisplay(section) {
         } else {
             id.style.height = `0`;
         }
+        resetmobileMenuSectionsDisplay('management');
     }
     else if (section === 'elevi') {
         elevi = !elevi;
@@ -154,6 +155,7 @@ function mobileMenuSectionsDisplay(section) {
         } else {
             id.style.height = `0`;
         }
+        resetmobileMenuSectionsDisplay('elevi');
     }
     else if (section === 'profesori') {
         profesori = !profesori;
@@ -163,6 +165,59 @@ function mobileMenuSectionsDisplay(section) {
             id.style.height = `${id.scrollHeight}px`;
         } else {
             id.style.height = `0`;
+        }
+        resetmobileMenuSectionsDisplay('profesori');
+    }
+}
+
+function resetmobileMenuSectionsDisplay(section){
+    if(section==='management'){
+
+        let id = document.getElementById("mobile-dropdown-menu-elevi");
+
+        if (elevi) {
+            id.style.height = `0`;
+            elevi = !elevi;
+        }
+
+        id = document.getElementById("mobile-dropdown-menu-profesori");
+
+        if (profesori) {
+            id.style.height = `0`;
+            profesori = !profesori;
+        }
+    }
+    else if(section==='elevi'){
+
+        let id = document.getElementById("mobile-dropdown-menu-management");
+
+        if (management) {
+            id.style.height = `0`;
+            management = !management;
+        }
+
+        id = document.getElementById("mobile-dropdown-menu-profesori");
+
+        if (profesori) {
+            id.style.height = `0`;
+            profesori = !profesori;
+        }
+    }
+    else if(section==='profesori'){
+
+        let id = document.getElementById("mobile-dropdown-menu-management");
+
+        if (management) {
+            id.style.height = `0`;
+            management = !management;
+        }
+
+
+        id = document.getElementById("mobile-dropdown-menu-elevi");
+
+        if (elevi) {
+            id.style.height = `0`;
+            elevi = !elevi;
         }
     }
 }
