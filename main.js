@@ -135,17 +135,39 @@ function examTextDisplayReset(n){
 
 
 
-isOnDisplay=0;
-function mobilemenudisplay(){
-    isOnDisplay=!isOnDisplay;
-    if(isOnDisplay){
-        document.getElementById("phone-menu").style.display="flex";
-        document.getElementById("mobile-logo").style.position="fixed";
-        document.getElementById("burger-icon").style.position="fixed";
+let isOnDisplay=0;
+
+function mobilemenudisplay() {
+    const phoneMenu = document.getElementById("phone-menu");
+    const mobileLogo = document.getElementById("mobile-logo");
+    const burgerIcon = document.getElementById("burger-icon");
+
+    if (isOnDisplay) {
+
+        phoneMenu.style.maxHeight = "0";
+        phoneMenu.style.opacity = "0";
+
+
+        setTimeout(() => {
+            phoneMenu.style.display = "none";
+        }, 500);
+
+        mobileLogo.style.position = "absolute";
+        burgerIcon.style.position = "absolute";
+
+    } else {
+        phoneMenu.style.display = "flex";
+        phoneMenu.style.maxHeight = "0";
+        phoneMenu.style.opacity = "0";
+
+        setTimeout(() => {
+            phoneMenu.style.maxHeight = "100vh";
+            phoneMenu.style.opacity = "1";
+        }, 10);
+
+        mobileLogo.style.position = "fixed";
+        burgerIcon.style.position = "fixed";
     }
-    else{
-        document.getElementById("phone-menu").style.display="none";
-        document.getElementById("mobile-logo").style.position="absolute";
-        document.getElementById("burger-icon").style.position="absolute";
-    }
+
+    isOnDisplay = !isOnDisplay;
 }
