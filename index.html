@@ -21,16 +21,53 @@
         <div class="burger-icon" onclick="mobilemenudisplay()" id="burger-icon">
             <img style="width: 80px;height: 80px" src="./assets/websiteUI/burger-menu-icon.svg">
         </div>
-        <div style="width: 100%;background-color:#F6F3EE;z-index:100;position: fixed;flex-direction: column;text-align:center;justify-content: center;
+        <div style="width: 100%;background-color:#F6F3EE;z-index:100;position: fixed;flex-direction: column;align-items: center;justify-content: center;
     overflow: auto;height: 100vh; display: none" id="phone-menu">
 
 
-        <a href="prezentare.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">PREZENTARE</a>
-        <h1 style="margin-top:20px">MANAGEMENT</h1>
-        <h1 style="margin-top:20px">ELEVI</h1>
-        <h1 style="margin-top:20px">PROFESORI</h1>
-        <h1 style="margin-top:20px">EXAMENE</h1>
-        <h1 style="margin-top:20px">CONTACT</h1>
+            <a href="prezentare.html" style="color:black;text-decoration: none;font-size:32px;font-weight: bold">PREZENTARE</a>
+
+
+
+            <div style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold;display: flex;flex-direction: column;text-align:center;">
+                <div style="flex-direction: row; cursor: pointer;" onclick="mobileMenuSectionsDisplay('management')">
+                    <a>MANAGEMENT</a>
+                </div>
+                <div id="mobile-dropdown-menu-management" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">ORGANIGRAMA</a>
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">ORAR CLASE</a>
+                    <a href="documente.html" style="margin-top:10px;text-decoration: none;color:black;font-size:24px">DOCUMENTE</a>
+                </div>
+            </div>
+
+
+            <div style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold;display: flex;flex-direction: column;text-align:center;">
+                <div style="flex-direction: row; cursor: pointer;" onclick="mobileMenuSectionsDisplay('elevi')">
+                    <a>ELEVI</a>
+                </div>
+                <div id="mobile-dropdown-menu-elevi" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">LICEU</a>
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">GIMNAZIU</a>
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">ALUMNI</a>
+                </div>
+            </div>
+
+
+
+            <div style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold;display: flex;flex-direction: column;text-align:center;">
+                <div style="flex-direction: row; cursor: pointer;" onclick="mobileMenuSectionsDisplay('profesori')">
+                    <a>PROFESORI</a>
+                </div>
+                <div id="mobile-dropdown-menu-profesori" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
+                    <a href="catedra.html" style="margin-top:10px;text-decoration: none;color:black;font-size:24px">CATEDRE</a>
+                    <a style="margin-top:10px;text-decoration: none;color:black;font-size:24px">PROIECTE</a>
+                </div>
+            </div>
+
+
+            <a href="examene.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">EXAMENE</a>
+
+            <a href="contact.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">CONTACT</a>
 
 
 

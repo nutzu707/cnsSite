@@ -131,8 +131,41 @@ function examTextDisplayReset(n){
 }
 
 
+let management = false;
+let elevi = false;
+let profesori = false;
+function mobileMenuSectionsDisplay(section) {
+    if (section === 'management') {
+        management = !management;
+        let id = document.getElementById("mobile-dropdown-menu-management");
 
+        if (management) {
+            id.style.height = `${id.scrollHeight}px`;
+        } else {
+            id.style.height = `0`;
+        }
+    }
+    else if (section === 'elevi') {
+        elevi = !elevi;
+        let id = document.getElementById("mobile-dropdown-menu-elevi");
 
+        if (elevi) {
+            id.style.height = `${id.scrollHeight}px`;
+        } else {
+            id.style.height = `0`;
+        }
+    }
+    else if (section === 'profesori') {
+        profesori = !profesori;
+        let id = document.getElementById("mobile-dropdown-menu-profesori");
+
+        if (profesori) {
+            id.style.height = `${id.scrollHeight}px`;
+        } else {
+            id.style.height = `0`;
+        }
+    }
+}
 
 
 let isOnDisplay=0;
