@@ -65,7 +65,7 @@ body{
 
 
 .welcome-background{
-    background-image: url('./assets/websiteUI/shita-liceu.png');
+    background-image: url('./assets/websiteUI/schita-liceu.png');
     width: 100%; height: 850px;
     background-size: cover; background-position: center;
     margin-bottom: 180px;
@@ -91,7 +91,7 @@ body{
 }
 
 .prezentare-title-bar{
-    margin-top:50px;
+    margin-top:20px;
     display: flex;
     align-items: center;
     justify-content: center;
