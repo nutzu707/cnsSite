@@ -1,7 +1,26 @@
+@font-face {
+    font-family: 'CambriaAndroid';
+    src: url('./assets/websiteUI/Cambria-Font-For Android.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'CambriaLinux';
+    src: url('./assets/websiteUI/Cambria-Font-For-Linux.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'CambriaMac';
+    src: url('./assets/websiteUI/Cambria-Font-For-MAC.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'CambriaWindows';
+    src: url('./assets/websiteUI/Cambria-Font-For-Windows.ttf')  format('truetype');
+}
+
+
 *{
     margin:0;
     padding:0;
-    font-family: 'Cambria', serif;
+    font-family: Cambria, 'CambriaAndroid', 'CambriaLinux', 'CambriaMac', 'CambriaWindows', serif;
+    font-weight: bold;
 }
 
 
@@ -336,7 +355,7 @@ body{
     }
     .about{
         width: 100%;
-        font-size:60px;
+        font-size:70px;
         text-align:center;
         padding-top:250px;
         padding-left:0;
