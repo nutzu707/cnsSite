@@ -305,6 +305,7 @@ body{
     font-size:60px;
 }
 
+
 .contact{
     display: flex;width: 100%;margin-top:90px;
 }
@@ -316,6 +317,9 @@ body{
 }
 .descrieremainpage{
     font-size:26px;text-align: center;margin-top:-12px;
+}
+.nume-catedra{
+    font-size:20px;width:700px;height: 80px;background-color:#F6F3EE;;justify-self:center;text-align:center;margin-top:380px;display: flex;justify-content: center;align-content: center;
 }
 
 @media screen and (max-width: 1580px){
@@ -331,6 +335,13 @@ body{
     .contact{
         flex-direction: column;
         align-items: center;
+    }
+    .nume-catedra{
+
+        width: 100%;
+        margin-top:-100px;
+        background-color:transparent;
+        font-size:16px;
     }
     .contactmap{
         width: 100%;
