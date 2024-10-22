@@ -67,7 +67,7 @@ body{
     margin-top:200px;
     font-size:100px;
     font-weight: bold;
-    width:650px;
+    width:576px;
 }
 
 .dropdown-menu-elevi{
@@ -301,7 +301,9 @@ body{
     display:flex;justify-content:center;margin-top:120px;background-size: cover;background-position: center;background-repeat: no-repeat;width: 100%;height: 500px
 }
 
-
+.colegiulnationaltitlu{
+    font-size:60px;
+}
 
 .contact{
     display: flex;width: 100%;margin-top:90px;
@@ -311,6 +313,9 @@ body{
 }
 .datedecontact{
     text-align: center; width: 50%;
+}
+.descrieremainpage{
+    font-size:26px;text-align: center;margin-top:-12px;
 }
 
 @media screen and (max-width: 1580px){
@@ -495,12 +500,19 @@ body{
         background-image: url("./assets/websiteUI/schita-liceu-mini.png");
     }
     .about{
-        width: 100%;
+
+        width: 90%;
+        margin-left:5%;
         font-size:70px;
         text-align:center;
-        padding-top:250px;
+        padding-top:200px;
         padding-left:0;
-        color:navy;
+    }
+    .colegiulnationaltitlu{
+        font-size:32px;
+    }
+    .descrieremainpage{
+        font-size:22px;
     }
    .footer .solid{
         display: none;
