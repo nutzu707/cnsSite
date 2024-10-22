@@ -63,9 +63,8 @@ body{
 }
 
 .about{
-
     user-select:none;
-    margin-top:130px;
+    margin-top:200px;
     font-size:100px;
     font-weight: bold;
     width:650px;
@@ -127,7 +126,7 @@ body{
 
 
 .page-title {
-    font-size:100px;text-align: center;font-weight: bold;
+    font-size:80px;text-align: center;font-weight: bold;
 }
 .prezentare-title{
     font-size:100px;font-weight: bold;
@@ -173,6 +172,7 @@ body{
 
 }
 .titlu-anunt-desc{
+    font-size:32px;
     margin-left:20px;
     text-transform: uppercase;
 }
