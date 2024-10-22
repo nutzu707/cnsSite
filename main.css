@@ -241,7 +241,7 @@ body{
     color:navy;
 }
 .logo-anunt{
-    padding:5px;width: 80px;
+    width: 65px;height: 87px;
 }
 .pozacladireprezentare{
     width: 1500px;z-index:-1;position:fixed;margin-top:-150px;height: 101%;
@@ -532,9 +532,10 @@ body{
         display: flex;
     }
     .logo-anunt{
-        width:60px;
+        width:65px;
         margin-top:5px;
         margin-left:5px;
+        height: 87px;
     }
 
 }
