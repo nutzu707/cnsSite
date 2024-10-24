@@ -112,24 +112,50 @@ body{
 }
 
 .prezentare-title-bar{
-    margin-top:20px;
+    z-index:2;
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:30px;
+    width: 100%;
+    margin-bottom:16px;
 }
-.prezentare-title-bar::before {
+.prezentare-title-bar::before,
+.prezentare-title-bar::after{
     content: "";
     flex: 1;
     border-bottom: 2px solid black;
+    margin: 0;
 
 }
+.container-prezentare{
+    width:1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+.bugsolver3{
+    z-index:2;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
+.bugsolver3::before{
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid black;
+    margin: 0;
+}
 .page-title {
     font-size:80px;text-align: center;font-weight: bold;
 }
 .prezentare-title{
-    font-size:100px;font-weight: bold;
+    font-size:60px;text-align: center;font-weight: bold;color: black;
 }
 
 .container-concursuri{
@@ -220,6 +246,7 @@ body{
 }
 .paragraf-anunt > p{
     margin-bottom:20px;
+    text-align: justify;
 }
 .big-logo{
     display: block;
@@ -556,6 +583,7 @@ body{
     }
     .paragraf-anunt{
         max-width: 95vw;
+
     }
     .container-anunt{
         width: 100vw;
@@ -587,6 +615,12 @@ body{
 
 
 @media screen and (max-width: 820px){
+
+    .bugsolver2{
+        max-width: 95vw;
+        margin-left:2.5vw;
+    }
+
     .backbutton-anunt{
         margin-right:10px;
     }
