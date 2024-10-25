@@ -157,7 +157,9 @@ body{
 .prezentare-title{
     font-size:60px;text-align: center;font-weight: bold;color: black;
 }
-
+.prezentare-smallsection{
+    width: 100%;display: flex;margin-top:100px;align-items: center;height: 350px
+}
 .container-concursuri{
     max-width:1000px;
     margin: 50px auto 0;
@@ -357,6 +359,28 @@ body{
 .proiect-ttl{
     margin-left:auto;margin-right:50px;
 }
+.bugsolver4{
+    width: 50%
+}
+.img-prezentare-sml{
+    height: 350px;width: 50%;
+}
+.bugsolver5{
+    margin-top:55px;margin-left: 50px;height: 350px;width: 50%;
+}
+.bugsolver6{
+    width: 50%;
+    margin-left:50px;
+}
+.bugsolver7{
+    height: 350px;width: 50%;background-color:black;display: none;
+}
+.viziunea-cns{
+    width: 100%;display:flex;margin-top:40px;margin-bottom:80px;
+}
+.text-viziunea-cns{
+    text-align: center;font-size:30px;width: 80%;margin-left:10%
+}
 @media screen and (max-width: 1580px){
     .about{
         padding-left:30px;
@@ -367,9 +391,33 @@ body{
 }
 
 @media screen and (max-width: 1400px) {
+    .bugsolver8{
+        margin-top:600px;
+    }
+
+    .bugsolver5{
+        margin-left:0;
+
+    }
+    .bugsolver6{
+        margin-left:0;
+    }
+    .img-prezentare-sml{
+        display: none;
+    }
+    .bugsolver7{
+        display: block;
+
+
+    }
     .contact{
         flex-direction: column;
         align-items: center;
+    }
+    .prezentare-smallsection{
+        flex-direction: column;
+        margin-bottom:550px;
+
     }
     .proiect{
         width: 100%;
@@ -490,6 +538,24 @@ body{
 
 
 @media screen and (max-width: 1050px) {
+    .text-viziunea-cns{
+        text-align: justify;
+        width: 95vw;
+        margin-left:2.5vw;
+    }
+
+    .bugsolver4{
+        width: 95vw;
+    }
+    .bugsolver6{
+        width: 95vw;
+    }
+    .bugsolver5{
+        width: 95vw;
+    }
+    .bugsolver7{
+        width: 95vw;
+    }
     .prezentare-descriere{
         width: 95%;
         margin-top:100px;
@@ -615,7 +681,12 @@ body{
 
 
 @media screen and (max-width: 820px){
-
+    .text-viziunea-cns{
+        font-size:24px;
+    }
+    .prezentare-title{
+        font-size:50px;
+    }
     .bugsolver2{
         max-width: 95vw;
         margin-left:2.5vw;
