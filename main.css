@@ -82,7 +82,6 @@ body{
     position: absolute;
 }
 
-/* Styles for showing dropdown menus with animation */
 .menu-elevi:hover .dropdown-menu-elevi,
 .menu-profesori:hover .dropdown-menu-profesori,
 .menu-management:hover .dropdown-menu-management,
@@ -109,9 +108,9 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    opacity: 0; /* Initially hidden */
-    transform: rotateY(90deg); /* Initially rotated out of view */
-    animation: flipIn .4s ease-out forwards; /* Apply animation */
+    opacity: 0;
+    transform: rotateY(90deg);
+    animation: flipIn .3s ease-out forwards;
 }
 
 .page-title-bar::before,
@@ -122,19 +121,18 @@ body{
     margin: 0 20px;
 }
 
-/* Flip-in animation */
 @keyframes flipIn {
     0% {
         opacity: 0;
-        transform: rotateY(90deg); /* Starts rotated out of view */
+        transform: rotateY(90deg);
     }
     50% {
         opacity: 1;
-        transform: rotateY(-10deg); /* A slight tilt for effect */
+        transform: rotateY(-10deg);
     }
     100% {
         opacity: 1;
-        transform: rotateY(0); /* Ends at normal position */
+        transform: rotateY(0);
     }
 }
 
