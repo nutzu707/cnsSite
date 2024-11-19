@@ -70,19 +70,28 @@ body{
     width:576px;
 }
 
-.dropdown-menu-elevi{
-    display: none;
-}
-.dropdown-menu-profesori{
-    display: none;
-}
-.dropdown-menu-management{
-    display: none;
+
+.dropdown-menu-elevi,
+.dropdown-menu-profesori,
+.dropdown-menu-management,
+.dropdown-menu-steag{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    position: absolute;
 }
 
-.menu-elevi:hover .dropdown-menu-elevi{display: block;}
-.menu-profesori:hover .dropdown-menu-profesori{display: block;}
-.menu-management:hover .dropdown-menu-management{display: block;}
+/* Styles for showing dropdown menus with animation */
+.menu-elevi:hover .dropdown-menu-elevi,
+.menu-profesori:hover .dropdown-menu-profesori,
+.menu-management:hover .dropdown-menu-management,
+.menu-steag:hover .dropdown-menu-steag{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 .welcome-background{
@@ -94,13 +103,15 @@ body{
 }
 
 .page-title-bar {
-    z-index:2;
-    position:relative;
+    z-index: 2;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:30px;
-
+    margin-top: 30px;
+    opacity: 0; /* Initially hidden */
+    transform: rotateY(90deg); /* Initially rotated out of view */
+    animation: flipIn .4s ease-out forwards; /* Apply animation */
 }
 
 .page-title-bar::before,
@@ -110,6 +121,29 @@ body{
     border-bottom: 2px solid black;
     margin: 0 20px;
 }
+
+/* Flip-in animation */
+@keyframes flipIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg); /* Starts rotated out of view */
+    }
+    50% {
+        opacity: 1;
+        transform: rotateY(-10deg); /* A slight tilt for effect */
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0); /* Ends at normal position */
+    }
+}
+
+.page-title {
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+}
+
 
 .prezentare-title-bar{
     z-index:2;
@@ -160,6 +194,40 @@ body{
 .prezentare-smallsection{
     width: 100%;display: flex;margin-top:100px;align-items: center;height: 350px
 }
+.underline-meniu {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-meniu::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.2s ease, left 0.2s ease;
+}
+
+.underline-meniu:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.footer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 .container-concursuri{
     max-width:1000px;
     margin: 50px auto 0;

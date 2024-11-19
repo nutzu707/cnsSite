@@ -130,6 +130,29 @@ function examTextDisplayReset(n){
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.footer');
+
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    };
+
+    const handleScroll = () => {
+        elements.forEach(el => {
+            if (isElementInViewport(el)) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+});
+
 
 let management = false;
 let elevi = false;
