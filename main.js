@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let management = false;
 let elevi = false;
 let profesori = false;
+let steag = false;
 function mobileMenuSectionsDisplay(section) {
     if (section === 'management') {
         management = !management;
@@ -191,6 +192,17 @@ function mobileMenuSectionsDisplay(section) {
         }
         resetmobileMenuSectionsDisplay('profesori');
     }
+    else if (section === 'steag') {
+        steag = !steag;
+        let id = document.getElementById("mobile-dropdown-menu-steag");
+
+        if (steag) {
+            id.style.height = `${id.scrollHeight}px`;
+        } else {
+            id.style.height = `0`;
+        }
+        resetmobileMenuSectionsDisplay('steag');
+    }
 }
 
 function resetmobileMenuSectionsDisplay(section){
@@ -209,6 +221,13 @@ function resetmobileMenuSectionsDisplay(section){
             id.style.height = `0`;
             profesori = !profesori;
         }
+
+        id = document.getElementById("mobile-dropdown-menu-steag");
+
+        if (steag) {
+            id.style.height = `0`;
+            steag = !steag;
+        }
     }
     else if(section==='elevi'){
 
@@ -224,6 +243,13 @@ function resetmobileMenuSectionsDisplay(section){
         if (profesori) {
             id.style.height = `0`;
             profesori = !profesori;
+        }
+
+        id = document.getElementById("mobile-dropdown-menu-steag");
+
+        if (steag) {
+            id.style.height = `0`;
+            steag = !steag;
         }
     }
     else if(section==='profesori'){
@@ -241,6 +267,37 @@ function resetmobileMenuSectionsDisplay(section){
         if (elevi) {
             id.style.height = `0`;
             elevi = !elevi;
+        }
+
+        id = document.getElementById("mobile-dropdown-menu-steag");
+
+        if (steag) {
+            id.style.height = `0`;
+            steag = !steag;
+        }
+    }
+    else if(section==='steag'){
+
+        let id = document.getElementById("mobile-dropdown-menu-management");
+
+        if (management) {
+            id.style.height = `0`;
+            management = !management;
+        }
+
+
+        id = document.getElementById("mobile-dropdown-menu-elevi");
+
+        if (elevi) {
+            id.style.height = `0`;
+            elevi = !elevi;
+        }
+
+        id = document.getElementById("mobile-dropdown-menu-profesori");
+
+        if (profesori) {
+            id.style.height = `0`;
+            profesori = !profesori;
         }
     }
 }
@@ -282,3 +339,14 @@ function mobilemenudisplay() {
 
     isOnDisplay = !isOnDisplay;
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const children = document.querySelectorAll(".animatiedocumente .document");
+    const delayIncrement = 0.1;
+    children.forEach((child, index) => {
+        child.style.animationDelay = `${index * delayIncrement}s`;
+    });
+});
