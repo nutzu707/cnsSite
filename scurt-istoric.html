@@ -19,8 +19,7 @@
         <div class="burger-icon" onclick="mobilemenudisplay()" id="burger-icon">
             <img style="width: 80px;height: 80px" src="./assets/websiteUI/burger-menu-icon.svg">
         </div>
-        <div style="width: 100%;background-color:#F6F3EE;z-index:100;position: fixed;flex-direction: column;align-items: center;justify-content: center;
-    overflow: auto;height: 100vh; display: none" id="phone-menu">
+        <div style="width: 100%;background-color:#F6F3EE;z-index:100;position: fixed;flex-direction: column;align-items: center;justify-content: center;overflow: auto;height: 100vh; display: none" id="phone-menu">
 
 
             <a href="prezentare.html" style="color:black;text-decoration: none;font-size:32px;font-weight: bold">PREZENTARE</a>
@@ -32,10 +31,10 @@
                     <a>MANAGEMENT</a>
                 </div>
                 <div id="mobile-dropdown-menu-management" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
-                    <a href="./assets/documents/Organigrama.pdf" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">ORGANIGRAMA</a>
                     <a href="conducere.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">CONDUCERE</a>
                     <a href="documente-management.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">DOCUMENTE</a>
                     <a href="informatii-publice.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">INFORMATII PUBLICE</a>
+                    <a href="consiliul-de-administratie.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">CONSILIU DE ADMINISTRAȚIE</a>
                     <a href="arhiva.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px">ARHIVA</a>
                 </div>
             </div>
@@ -46,11 +45,11 @@
                     <a>ELEVI</a>
                 </div>
                 <div id="mobile-dropdown-menu-elevi" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
-                    <a href="./assets/photos/oferta-educationala.jpg" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">OFERTA</a>
                     <a href="./assets/documents/Orar%20clase%202024-2025.pdf" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">ORAR</a>
                     <a href="./assets/documents/Rezultate%20CNS%202024%20versiune%2015%20oct.pdf" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">PREMII</a>
                     <a href="documente-elevi.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">DOCUMENTE</a>
                     <a href="alumni.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">ALUMNI</a>
+                    <a href="cjex-salaj.html" style="margin-top:10px;text-decoration: none;color:dimgray;font-size:22px;">CJEX SĂLAJ</a>
                 </div>
             </div>
 
@@ -68,14 +67,22 @@
                 </div>
             </div>
 
+
             <a href="examene.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">EXAMENE</a>
 
             <a href="proiecte.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">PROIECTE</a>
 
             <a href="contact.html" style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold">CONTACT</a>
 
-            <a href="https://cnszalau.ro/hu/" style="font-size:24px; font-weight: bold;cursor: pointer;color:black;text-decoration: none;margin-top:20px;" ><img style="width:30px;border-radius:2px;" src="./assets/websiteUI/Flag_of_Hungary.svg"></a>
 
+            <div style="margin-top:20px;color:black;text-decoration: none;font-size:32px;font-weight: bold;display: flex;flex-direction: column;text-align:center;">
+                <div style="flex-direction: row; cursor: pointer;" onclick="mobileMenuSectionsDisplay('steag')">
+                    <a style="font-size:24px; font-weight: bold;cursor: pointer;color:black;text-decoration: none;margin-top:20px;" ><img style="width:30px;border-radius:2px;" src="./assets/websiteUI/romania-26883_1280.webp"></a>
+                </div>
+                <div id="mobile-dropdown-menu-steag" style="height: 0; overflow: hidden; transition: height 0.5s ease;flex-direction: column;display: flex">
+                    <a href="http://cnszalau.ro/hu" style="font-size:24px; font-weight: bold;cursor: pointer;color:black;text-decoration: none;margin-top:10px;" ><img style="width:30px;border-radius:2px;height:17px" src="./assets/websiteUI/Flag_of_Hungary.svg"></a>
+                </div>
+            </div>
 
 
         </div>
@@ -97,10 +104,10 @@
                 <div class="menu-management">
                     <p class="underline-meniu" style="font-size:24px; margin-right:50px; font-weight: bold;cursor: pointer">MANAGEMENT</p>
                     <div class="dropdown-menu-management">
-                        <a href="./assets/documents/Organigrama.pdf" target="_blank" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Organigrama</a><br>
                         <a href="conducere.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Conducere</a><br>
                         <a href="documente-management.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Documente</a><br>
                         <a href="informatii-publice.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Informatii Publice</a><br>
+                        <a href="consiliul-de-administratie.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Consiliul de Administratie</a><br>
                         <a href="arhiva.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Arhiva</a><br>
                     </div>
                 </div>
@@ -109,11 +116,11 @@
                 <div class="menu-elevi">
                     <p class="underline-meniu" style="font-size:24px; margin-right:50px; font-weight: bold;cursor: pointer">ELEVI</p>
                     <div class="dropdown-menu-elevi">
-                        <a href="#" onclick="window.open('./assets/documents/CNS_Zalau_ oferta2021.ppt');  window.open('./assets/documents/Propuneri de activitati non-formale 2022-2023.pptx');"  target="_blank" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Oferta</a><br>
                         <a href="./assets/documents/Orar%20clase%202024-2025.pdf" target="_blank" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Orar</a><br>
                         <a href="premii-elevi.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Premii</a><br>
                         <a href="documente-elevi.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Documente</a><br>
                         <a href="alumni.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">Alumni</a><br>
+                        <a href="cjex-salaj.html" style="font-size:18px;color:dimgray;text-decoration: none;font-weight: bold;cursor:pointer">CJEX Sălaj</a><br>
                     </div>
                 </div>
             </div>

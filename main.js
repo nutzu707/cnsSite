@@ -350,3 +350,5 @@ document.addEventListener("DOMContentLoaded", () => {
         child.style.animationDelay = `${index * delayIncrement}s`;
     });
 });
+
+
