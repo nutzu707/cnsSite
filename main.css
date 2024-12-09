@@ -46,6 +46,7 @@
 body{
     background-color:#F6F3EE;
 }
+
 .menu{
     display: flex;
     justify-content: center;
@@ -101,25 +102,7 @@ body{
 
 }
 
-.page-title-bar {
-    z-index: 2;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    opacity: 0;
-    transform: rotateY(90deg);
-    animation: flipIn .3s ease-out forwards;
-}
 
-.page-title-bar::before,
-.page-title-bar::after {
-    content: "";
-    flex: 1;
-    border-bottom: 2px solid black;
-    margin: 0 20px;
-}
 
 @keyframes flipIn {
     0% {
@@ -136,11 +119,6 @@ body{
     }
 }
 
-.page-title {
-    position: relative;
-    z-index: 1;
-    padding: 0 10px;
-}
 
 
 .prezentare-title-bar{
@@ -183,9 +161,35 @@ body{
     border-bottom: 2px solid black;
     margin: 0;
 }
+
 .page-title {
-    font-size:80px;text-align: center;font-weight: bold;
+    position: relative;
+    z-index: 1;
+    font-size:80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 10px;
 }
+.page-title-bar {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    opacity: 0;
+    transform: rotateY(90deg);
+    animation: flipIn .3s ease-out forwards;
+}
+
+.page-title-bar::before,
+.page-title-bar::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #E5E5E5;
+    margin: 0 20px
+}
+
 .prezentare-title{
     font-size:60px;text-align: center;font-weight: bold;color: black;
 }
@@ -318,6 +322,7 @@ body{
 }
 .big-logo{
     display: block;
+
 }
 .burger-icon{
     margin-right:-50px;
@@ -449,8 +454,6 @@ body{
         transform: translateY(0);
     }
 }
-
-
 
 
 
@@ -838,3 +841,8 @@ body{
 }
 
 
+.solid{
+    border: none;
+    height: 2px;
+    background-color: #E5E5E5;
+}
