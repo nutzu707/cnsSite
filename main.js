@@ -351,4 +351,65 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+let contrast=false;
+function toggleContrast(){
+    if(contrast===false){
+        contrast=true;
+        document.querySelectorAll('*').forEach(el => el.style.color = 'white');
+        document.querySelectorAll('body').forEach(element => {
+            element.style.backgroundColor = 'black';
+        });
+        document.querySelectorAll('.welcome-background').forEach(element => {
+            element.style.backgroundImage = 'url("./assets/websiteUI/schita-liceu-inverted.png")';
+        });
+        document.querySelectorAll('.accessibilitybutton').forEach(element => {
+            element.style.backgroundColor = 'black';
+        });
+    }
+    else if(contrast===true){
+        contrast=false;
+        location.reload();
 
+    }
+}
+
+let fontsizescale = 0;
+
+function fontUp() {
+    if (fontsizescale <= 5) {
+        document.querySelectorAll('*').forEach(element => {
+            let currentSize = window.getComputedStyle(element).fontSize;
+            let newSize = parseFloat(currentSize) * 1.05;
+            element.style.fontSize = newSize + 'px';
+        });
+        fontsizescale++;
+    }
+}
+
+function fontDown(){
+    if (fontsizescale > 0) {
+        document.querySelectorAll('*').forEach(element => {
+            let currentSize = window.getComputedStyle(element).fontSize;
+            let newSize = parseFloat(currentSize) / 1.05;
+            element.style.fontSize = newSize + 'px';
+        });
+        fontsizescale--;
+    }
+}
+
+
+let Accessibility=0;
+function toggleAccessibility(){
+    if(Accessibility===0){
+        Accessibility=1;
+        document.querySelectorAll('.accessibility').forEach(element => {
+            element.style.display = 'block';
+        });
+    }
+    else if(Accessibility===1){
+        Accessibility=0;
+        document.querySelectorAll('.accessibility').forEach(element => {
+            element.style.display = 'none';
+        });
+    }
+}
