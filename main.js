@@ -359,6 +359,7 @@ function toggleContrast(){
         document.querySelectorAll('body').forEach(element => {
             element.style.backgroundColor = 'black';
         });
+
         document.querySelectorAll('.welcome-background').forEach(element => {
             element.style.backgroundImage = 'url("./assets/websiteUI/schita-liceu-inverted.png")';
         });
@@ -387,6 +388,7 @@ function fontUp() {
 }
 
 function fontDown(){
+
     if (fontsizescale > 0) {
         document.querySelectorAll('*').forEach(element => {
             let currentSize = window.getComputedStyle(element).fontSize;
@@ -395,6 +397,7 @@ function fontDown(){
         });
         fontsizescale--;
     }
+
 }
 
 

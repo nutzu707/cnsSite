@@ -48,7 +48,8 @@ body{
 }
 .accessibilitybutton{
     border:0;background-color: #F6F3EE;font-size:18px;margin-bottom:5px;font-weight: bold;
-
+    z-index:50000;
+    position: relative;
 }
 
 .menu{
